@@ -2209,7 +2209,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff5b14;
+  background: #baff8f;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3072,10 +3072,6 @@ embed {
 }
 .links-of-blogroll-inline .links-of-blogroll-item {
   display: inline-block;
-}
-body {
-  background: url("/images/background.jpg");
-  background-attachment: fixed;
 }
 .post {
   margin-top: 60px;
