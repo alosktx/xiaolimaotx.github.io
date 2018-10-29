@@ -1004,7 +1004,7 @@ pre .javascript .function {
   display: inline-block;
   padding: 0 20px;
   font-size: 14px;
-  color: #fff;
+  color: rgba(255,255,255,0.5);
   background: #222;
   border: 2px solid #222;
   text-decoration: none;
@@ -2209,7 +2209,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f9ff28;
+  background: #3dc122;
 }
 .links-of-blogroll {
   font-size: 13px;
