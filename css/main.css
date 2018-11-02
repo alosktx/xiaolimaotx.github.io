@@ -2209,7 +2209,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #fff;
+  background: #e72b7c;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3104,6 +3104,9 @@ img.img-topic {
   border-top-color: #a166ab;
   box-shadow: 0 -10px 10px 0 rgba(0,0,0,0.15);
 }
+.footer-inner {
+  text-align: center;
+}
 .back-to-top {
   line-height: 1.5;
   right: 10px;
@@ -3140,6 +3143,15 @@ img.img-topic {
   border-bottom-width: 3px;
   border-bottom-style: solid;
   border-bottom-color: #a166ab;
+}
+element.style {
+  opacity: 1;
+  display: block;
+  -webkit-transform: translateX(0px);
+  -moz-transform: translateX(0px);
+  -ms-transform: translateX(0px);
+  -o-transform: translateX(0px);
+  transform: translateX(0px);
 }
 .site-description {
   letter-spacing: 5px;
