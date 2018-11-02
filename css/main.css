@@ -2209,7 +2209,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #e72b7c;
+  background: #9cff49;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3106,6 +3106,13 @@ img.img-topic {
 }
 .footer-inner {
   text-align: center;
+}
+.footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 50px;
 }
 .back-to-top {
   line-height: 1.5;
