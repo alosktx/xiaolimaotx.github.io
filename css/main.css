@@ -2209,7 +2209,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #7544f0;
+  background: #fff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3095,6 +3095,26 @@ img.img-topic {
 .header {
   line-height: 1.5;
 }
+.footer {
+  line-height: 1.5;
+  background-color: rgba(255,255,255,0.75);
+  color: #333;
+  border-top-width: 3px;
+  border-top-style: solid;
+  border-top-color: #a166ab;
+  box-shadow: 0 -10px 10px 0 rgba(0,0,0,0.15);
+}
+.back-to-top {
+  line-height: 1.5;
+  right: 10px;
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+  background-color: rgba(247,149,51,0.75);
+  border-radius: 5px;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.35);
+}
 .post {
   margin-bottom: 50px;
   padding: 45px 36px 36px 36px;
@@ -3120,6 +3140,28 @@ img.img-topic {
   border-bottom-width: 3px;
   border-bottom-style: solid;
   border-bottom-color: #a166ab;
+}
+.site-description {
+  letter-spacing: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  margin-top: 15px;
+  margin-left: 13px;
+  color: #f37055;
+}
+.links-of-blogroll-title {
+  margin-bottom: 10px;
+  margin-top: 15px;
+  color: rgba(7,179,155,0.75);
+  margin-left: 6px;
+  font-size: 15px;
+  font-weight: 700;
+}
+#days {
+  display: block;
+  color: #07b39b;
+  font-size: 13px;
+  margin-top: 15px;
 }
 .ds-top-threads li a {
   padding-left: 5px;
