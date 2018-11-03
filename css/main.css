@@ -2209,7 +2209,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #aa5c03;
+  background: #8357d6;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3619,9 +3619,6 @@ code.description {
 @media (max-width: 1023px) {
   .container {
     background-color: rgba(0,0,0,0);
-  }
-  .feed-link {
-    display: none !important;
   }
 }
 @media (max-width: 767px) {
