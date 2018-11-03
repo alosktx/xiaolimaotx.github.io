@@ -2209,7 +2209,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #c4ffff;
+  background: #ff6b57;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3101,6 +3101,48 @@ img.img-topic {
 }
 .container {
   background-color: rgba(0,0,0,0.75);
+}
+.header-inner {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+.posts-expand {
+  padding-top: 80px;
+}
+.posts-expand .post-meta {
+  margin: 5px 0px 0px 0px;
+}
+.post-button {
+  margin-top: 0px;
+}
+.container .header-inner {
+  width: 100%;
+}
+.site-meta {
+  background-image: linear-gradient(90deg, #f79533 0%, #f37055 15%, #ef4e7b 30%, #a166ab 44%, #5073b8 58%, #1098ad 72%, #07b39b 86%, #6dba82 100%);
+}
+.brand {
+  background-color: rgba(255,255,255,0);
+  margin-top: 15px;
+  padding: 0px;
+}
+.site-title {
+  font-size: 75px;
+  font-weight: bold;
+  color: #fff;
+  line-height: 80px;
+  letter-spacing: 3px;
+}
+.site-subtitle {
+  margin: 0px;
+  font-size: 16px;
+  letter-spacing: 1px;
+  padding-bottom: 3px;
+  font-weight: bold;
+  color: #fff;
+  border-bottom-width: 3px;
+  border-bottom-style: solid;
+  border-bottom-color: #a166ab;
 }
 .footer {
   line-height: 1.5;
