@@ -2209,7 +2209,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #81ffff;
+  background: #aff9ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3504,28 +3504,33 @@ pre .deletion {
     padding: 86px 5px 36px 5px;
   }
 }
-.about-page {
-  margin: -80px 0px 60px 0px;
+#photo {
+  display: block;
+  text-align: center;
+  margin: -100px 50px 40px 50px;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
   background-color: #fff;
-  padding: 106px 36px 36px 36px;
+  padding: 106px 36px 10px 36px;
 }
 @media (max-width: 767px) {
-  .about-page {
-    margin: -73px 0px 50px 0px;
-    padding: 96px 15px 20px 15px;
+  #photo {
+    margin: -93px 15px 50px 15px;
+    padding: 96px 10px 0px 10px;
   }
 }
-h2.about-title {
-  border-left: none !important;
-  margin-left: 0px !important;
-  padding-left: 0px !important;
+#about {
+  display: block;
   text-align: center;
-  background-image: linear-gradient(90deg, #a166ab 0%, #a166ab 40%, #ef4e7b 45%, #f37055 50%, #ef4e7b 55%, #a166ab 60%, #a166ab 100%);
-  background-size: cover;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  user-select: none;
+  margin: -100px 50px 40px 50px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+  background-color: #fff;
+  padding: 106px 36px 10px 36px;
+}
+@media (max-width: 767px) {
+  #about {
+    margin: -93px 15px 50px 15px;
+    padding: 96px 10px 0px 10px;
+  }
 }
 .local-search-popup .search-icon,
 .local-search-popup .popup-btn-close {
