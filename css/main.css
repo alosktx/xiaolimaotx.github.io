@@ -2209,7 +2209,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #d18fe7;
+  background: #a793ff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3502,6 +3502,16 @@ pre .deletion {
     margin: -93px 15px 50px 15px;
     padding: 96px 10px 0px 10px;
   }
+}
+.post,
+.page {
+  margin-bottom: 40px;
+  padding: 50px 30px 25px;
+  -webkit-box-shadow: 0 0 14px #cacbcb;
+  -moz-box-shadow: 0 0 14px #cacbcb;
+  box-shadow: 0 0 14px #cacbcb;
+  background: #fff;
+  border-radius: 10px;
 }
 .about-page {
   margin: -80px 0px 60px 0px;
