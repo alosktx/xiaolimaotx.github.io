@@ -129,22 +129,13 @@
 
 
 <meta property="og:type" content="website">
-<meta property="og:title" content="photos">
+<meta property="og:title" content="照片">
 <meta property="og:url" content="https://xiaolimaotx.github.io/photos/index.html">
 <meta property="og:site_name" content="Tang&#39;s Blog">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="http://phvo99s14.bkt.clouddn.com/1.jpeg">
-<meta property="og:image" content="http://phvo99s14.bkt.clouddn.com/2.jpeg">
-<meta property="og:image" content="http://phvo99s14.bkt.clouddn.com/4.jpeg">
-<meta property="og:image" content="http://phvo99s14.bkt.clouddn.com/5.jpeg">
-<meta property="og:image" content="http://phvo99s14.bkt.clouddn.com/7.jpeg">
-<meta property="og:image" content="http://phvo99s14.bkt.clouddn.com/6.jpeg">
-<meta property="og:image" content="http://phvo99s14.bkt.clouddn.com/3.jpeg">
-<meta property="og:image" content="http://phvo99s14.bkt.clouddn.com/6.jpeg">
-<meta property="og:updated_time" content="2018-11-08T14:23:07.098Z">
+<meta property="og:updated_time" content="2018-11-10T02:00:43.244Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="photos">
-<meta name="twitter:image" content="http://phvo99s14.bkt.clouddn.com/1.jpeg">
+<meta name="twitter:title" content="照片">
 
 
 
@@ -204,7 +195,7 @@
 
 
 
-  <title>photos | Tang's Blog</title>
+  <title>照片 | Tang's Blog</title>
   
 
 
@@ -217,10 +208,6 @@
 </head>
 
 
-
-   <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
-   <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
-   <script type="text/javascript" src="/js/src/fireworks.js"></script>
 
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -417,7 +404,7 @@
     <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">photos</h1>
+	<h1 class="post-title" itemprop="name headline">照片</h1>
 
 
 
@@ -429,7 +416,8 @@
       <div class="post-body">
         
         
-          <table><br>   <tr><br>   <td><center><img src="http://phvo99s14.bkt.clouddn.com/1.jpeg"></center></td><br>   <td><center><img src="http://phvo99s14.bkt.clouddn.com/2.jpeg"></center></td><br><br>   </tr><br><br> <tr><br>   <td><center><img src="http://phvo99s14.bkt.clouddn.com/4.jpeg"></center></td><br>   <td><center><img src="http://phvo99s14.bkt.clouddn.com/5.jpeg"></center></td><br>   </tr><br><tr><br>   <td><center><img src="http://phvo99s14.bkt.clouddn.com/7.jpeg"></center></td><br>   <td><center><img src="http://phvo99s14.bkt.clouddn.com/6.jpeg"></center></td><br>   </tr><br><br><tr><br> <td><center><img src="http://phvo99s14.bkt.clouddn.com/3.jpeg"></center></td><br>   <td><center><img src="http://phvo99s14.bkt.clouddn.com/6.jpeg"></center></td><br>   </tr><br></table>
+          <div class="ImageGrid"></div>
+
 
         
       </div>
@@ -448,6 +436,13 @@
 
 
           
+
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
 
         </div>
         
@@ -776,10 +771,13 @@ show_date_time();
 
 
 
+  <script type="text/javascript" src="/js/src/utils.js?v="></script>
 
-  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/motion.js?v="></script>
 
-  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+  <script type="text/javascript" src="/js/src/minigrid.min.js?v="></script>
+
+  <script type="text/javascript" src="/js/src/photo.js?v="></script>
 
 
   
@@ -828,6 +826,28 @@ show_date_time();
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: true,
+        appId: 'dGQNDJAXUi6cUoN95fWfTUuf-gzGzoHsz',
+        appKey: 'z7AfTgOD56RLlU9DiU0dha7G',
+        placeholder: '欢迎留言，留下你的邮箱，有回复就会提醒你（邮箱不会公开）',
+        avatar:'identicon',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
