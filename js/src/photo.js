@@ -3,7 +3,7 @@ photo ={
     offset: 100,
     init: function () {
         var that = this;
-        $.getJSON("/photos/photoslist.json", function (data) {
+        $.getJSON("https://xiaolimaotx-1255814175.cos.ap-chengdu.myqcloud.com/photoslist.json", function (data) {
             that.render(that.page, data);
             //that.scroll(data);
         });
@@ -22,7 +22,7 @@ photo ={
             li += '<div class="card" style="width:230px">' +
                     '<div class="ImageInCard" style="height:'+ 230 * imageY / imageX + 'px">' +
                       '<a data-fancybox="gallery" href="https://xiaolimaotx-1255814175.cos.ap-chengdu.myqcloud.com/images/' + imgNameWithPattern + '?raw=true" data-caption="' + imgName + '">' +
-                        '<img src="	https://xiaolimaotx-1255814175.cos.ap-chengdu.myqcloud.com/images/' + imgNameWithPattern + '?raw=true"/>' +
+                        '<img src="https://xiaolimaotx-1255814175.cos.ap-chengdu.myqcloud.com/images/' + imgNameWithPattern + '?raw=true"/>' +
                       '</a>' +
                     '</div>' +
                     // '<div class="TextInCard">' + imgName + '</div>' +  //图片下显示文件名
