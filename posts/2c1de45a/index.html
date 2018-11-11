@@ -460,6 +460,16 @@
 
           
             
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/posts/2c1de45a/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count valine-comment-count" data-xid="/posts/2c1de45a/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
           
 
           
@@ -529,7 +539,7 @@
           
             <div class="post-gallery-row">
               <a class="post-gallery-img fancybox"
-                 href="http://phaaflp9b.bkt.clouddn.com/static/images/123.jpg" rel="gallery_cjocfsqch000268hzydbpfusu"
+                 href="http://phaaflp9b.bkt.clouddn.com/static/images/123.jpg" rel="gallery_cjocryonl00067shz4u3fcmpk"
                  itemscope itemtype="http://schema.org/ImageObject" itemprop="url">
                 <img src="http://phaaflp9b.bkt.clouddn.com/static/images/123.jpg" itemprop="contentUrl"/>
               </a>
@@ -705,6 +715,9 @@ var jiathis_config={
 
           
 
+  
+    <div class="comments" id="comments">
+    </div>
   
 
 
@@ -1082,6 +1095,28 @@ show_date_time();
 
 
 
+
+  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+  
+  <script type="text/javascript">
+    var GUEST = ['nick','mail','link'];
+    var guest = 'nick,mail';
+    guest = guest.split(',').filter(item=>{
+      return GUEST.indexOf(item)>-1;
+    });
+    new Valine({
+        el: '#comments' ,
+        verify: false,
+        notify: false,
+        appId: 'dGQNDJAXUi6cUoN95fWfTUuf-gzGzoHsz',
+        appKey: 'z7AfTgOD56RLlU9DiU0dha7G',
+        placeholder: '欢迎留言，留下你的邮箱，有回复就会提醒你（邮箱不会公开）',
+        avatar:'identicon',
+        guest_info:guest,
+        pageSize:'10' || 10,
+    });
+  </script>
 
 
 
