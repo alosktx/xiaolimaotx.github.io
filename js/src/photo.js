@@ -21,8 +21,8 @@ photo ={
            imageY = imageSize.split('.')[1];
             li += '<div class="card" style="width:230px">' +
                     '<div class="ImageInCard" style="height:'+ 230 * imageY / imageX + 'px">' +
-                      '<a data-fancybox="gallery" href="source\photos\images' + imgNameWithPattern + '?raw=true" data-caption="' + imgName + '">' +
-                        '<img src="source\photos\images' + imgNameWithPattern + '?raw=true"/>' +
+                      '<a data-fancybox="gallery" href="https://xiaolimaotx-1255814175.cos.ap-chengdu.myqcloud.com/images/' + imgNameWithPattern + '?raw=true" data-caption="' + imgName + '">' +
+                        '<img src="	https://xiaolimaotx-1255814175.cos.ap-chengdu.myqcloud.com/images/' + imgNameWithPattern + '?raw=true"/>' +
                       '</a>' +
                     '</div>' +
                     // '<div class="TextInCard">' + imgName + '</div>' +  //图片下显示文件名
