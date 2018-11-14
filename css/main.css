@@ -2209,7 +2209,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #f68cff;
+  background: #45af1a;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3150,6 +3150,9 @@ h4,
 h5,
 h6 {
   font-weight: 900;
+}
+img.img-topic {
+  width: 100%;
 }
 .post {
   margin-bottom: 50px;
