@@ -610,7 +610,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/posts/e4ca4686/" itemprop="url">gentlemann</a></h1>
+                <a class="post-title-link" href="/posts/e4ca4686/" itemprop="url">gentleman</a></h1>
         
 
         <div class="post-meta">
@@ -650,7 +650,7 @@
 
           
           
-             <span id="/posts/e4ca4686/" class="leancloud_visitors" data-flag-title="gentlemann">
+             <span id="/posts/e4ca4686/" class="leancloud_visitors" data-flag-title="gentleman">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -2062,7 +2062,7 @@
         
           <h1 class="post-title" itemprop="name headline">
                 
-                <a class="post-title-link" href="/posts/203e41b2/" itemprop="url">暑假实训项目之仿计算器</a></h1>
+                <a class="post-title-link" href="/posts/203e41b2/" itemprop="url">暑假实训项目之计算器</a></h1>
         
 
         <div class="post-meta">
@@ -2102,7 +2102,7 @@
 
           
           
-             <span id="/posts/203e41b2/" class="leancloud_visitors" data-flag-title="暑假实训项目之仿计算器">
+             <span id="/posts/203e41b2/" class="leancloud_visitors" data-flag-title="暑假实训项目之计算器">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -2127,7 +2127,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  0
+                  12
                 </span>
               
 
@@ -2166,7 +2166,64 @@
       
         
           
-            
+            <p>就是一个用来熟悉html的小项目，非常简单。<br>先贴上代码，如图所示，保存为 .html文件，用浏览器打开即可运行。</p>
+<pre><code>&lt;html&gt;
+&lt;head&gt;
+ &lt;meta http-equiv =&quot;Content-type&quot; content=&quot;text/html;charset=utf-8&quot;/&gt;
+ &lt;title&gt;简单计算器&lt;/title&gt;
+ &lt;script language=&quot;javascript&quot;&gt;
+  function  fun_test(op){
+      var fnum=parseInt(document.Mycount.firstNumber.value);
+      var snum=parseInt(document.Mycount.secondNumber.value);
+      var rs=0;
+      if(op==&apos;+&apos;){
+          rs=fnum+snum;
+      }
+      if(op==&apos;-&apos;){
+          rs=fnum-snum;
+      }
+      if(op==&apos;*&apos;){
+          rs=fnum*snum;
+      }
+      if(op==&apos;/&apos;){
+          rs=fnum/snum;
+      }
+      document.Mycount.result.value=rs;
+  }  
+ &lt;/script&gt;
+&lt;/head&gt;
+  &lt;body&gt;
+  &lt;form name=&quot;Mycount&quot;&gt;
+  &lt;table&gt;
+  &lt;tr&gt;
+    &lt;td&gt;第一个数：&lt;/td&gt;
+    &lt;td&gt;&lt;input type=&quot;text&quot; name=&quot;firstNumber&quot;&gt;&lt;/td&gt;
+  &lt;tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;第二个数：&lt;/td&gt;
+    &lt;td&gt;&lt;input type=&quot;text&quot; name=&quot;secondNumber&quot;&gt;&lt;/td&gt;
+  &lt;tr&gt;
+   &lt;tr&gt;
+    &lt;td&gt;计算结果：&lt;/td&gt;
+    &lt;td&gt;&lt;input type=&quot;text&quot; name=&quot;result&quot; readonly=&quot;true&quot;&gt;&lt;/td&gt;
+   &lt;tr&gt;
+   &lt;tr&gt;
+    &lt;td colspan=&quot;3&quot;&gt;
+        &lt;input type=&quot;button&quot; name=&quot;but1&quot; value=&quot;+&quot; onClick=&quot;fun_test(&apos;+&apos;)&quot;&gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+     &lt;input type=&quot;button&quot; name=&quot;but2&quot; value=&quot;-&quot; onClick=&quot;fun_test(&apos;-&apos;)&quot;&gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+     &lt;input type=&quot;button&quot; name=&quot;but3&quot; value=&quot;*&quot; onClick=&quot;fun_test(&apos;*&apos;)&quot;&gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+     &lt;input type=&quot;button&quot; name=&quot;but4&quot; value=&quot;/&quot; onClick=&quot;fun_test(&apos;/&apos;)&quot;&gt;
+    &lt;/td&gt;   
+   &lt;tr/&gt;
+  &lt;/table&gt;
+  &lt;/form&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p><hr><br>效果如下所示</p>
+<html><br><head><br> <meta http-equiv="Content-type" content="text/html;charset=utf-8"><br> <title>简单计算器</title><br> <script language="javascript"><br>  function  fun_test(op){<br>      var fnum=parseInt(document.Mycount.firstNumber.value);<br>      var snum=parseInt(document.Mycount.secondNumber.value);<br>      var rs=0;<br>      if(op==’+’){<br>          rs=fnum+snum;<br>      }<br>      if(op==’-‘){<br>          rs=fnum-snum;<br>      }<br>      if(op==’<em>‘){<br>          rs=fnum</em>snum;<br>      }<br>      if(op==’/‘){<br>          rs=fnum/snum;<br>      }<br>      document.Mycount.result.value=rs;<br>  }<br> </script><br></head><br>  <body><br>  <form name="Mycount"><br>  <table><br>  <tr><br>    <td>第一个数：</td><br>    <td><input type="text" name="firstNumber"></td><br>  </tr><tr><br>  </tr><tr><br>    <td>第二个数：</td><br>    <td><input type="text" name="secondNumber"></td><br>  </tr><tr><br>   </tr><tr><br>    <td>计算结果：</td><br>    <td><input type="text" name="result" readonly="true"></td><br>   </tr><tr><br>   </tr><tr><br>    <td colspan="3"><br>        <input type="button" name="but1" value="+" onclick="fun_test('+')"> &nbsp;&nbsp;&nbsp;&nbsp;<br>     <input type="button" name="but2" value="-" onclick="fun_test('-')"> &nbsp;&nbsp;&nbsp;&nbsp;<br>     <input type="button" name="but3" value="*" onclick="fun_test('*')"> &nbsp;&nbsp;&nbsp;&nbsp;<br>     <input type="button" name="but4" value="/" onclick="fun_test('/')"><br>    </td><br>   </tr><tr><br>  </tr></table><br>  </form><br>  <script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618},"display":{"superSample":2,"width":150,"height":300,"position":"left","hOffset":0,"vOffset":-20},"mobile":{"show":false,"scale":0.2},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body><br></html>
+
+
+
           
         
       
@@ -2427,7 +2484,7 @@ show_date_time();
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">4.0k</span>
+    <span title="Site words total count">4.1k</span>
   
   -->
  </div>
@@ -2440,7 +2497,7 @@ show_date_time();
  
   <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共4.0k字</span>
+  <span class="post-count">博客全站共4.1k字</span>
   </div>
 
 
