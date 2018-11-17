@@ -113,7 +113,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="C++," />
 
 
 
@@ -126,17 +126,18 @@
 
 
 
-<meta name="description" content="不定期更新中">
+<meta name="description" content="(function(){var player = new DPlayer({&quot;container&quot;:document.getElementById(&quot;dplayer3&quot;),&quot;video&quot;:{&quot;url&quot;:&quot;https://myvideo-1255814175.cos.ap-chengdu.myqcloud.com/%E8%BF%B7%E5%AE%AB.mp4&quot;},&quot;danmaku&quot;:{&quot;api&quot;:&quot;">
+<meta name="keywords" content="C++">
 <meta property="og:type" content="article">
 <meta property="og:title" content="一个迷宫游戏的小代码">
 <meta property="og:url" content="https://xiaolimaotx.github.io/posts/fae9f736/index.html">
 <meta property="og:site_name" content="Tang&#39;s Blog">
-<meta property="og:description" content="不定期更新中">
+<meta property="og:description" content="(function(){var player = new DPlayer({&quot;container&quot;:document.getElementById(&quot;dplayer3&quot;),&quot;video&quot;:{&quot;url&quot;:&quot;https://myvideo-1255814175.cos.ap-chengdu.myqcloud.com/%E8%BF%B7%E5%AE%AB.mp4&quot;},&quot;danmaku&quot;:{&quot;api&quot;:&quot;">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-11-15T11:27:43.339Z">
+<meta property="og:updated_time" content="2018-11-17T09:13:02.835Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="一个迷宫游戏的小代码">
-<meta name="twitter:description" content="不定期更新中">
+<meta name="twitter:description" content="(function(){var player = new DPlayer({&quot;container&quot;:document.getElementById(&quot;dplayer3&quot;),&quot;video&quot;:{&quot;url&quot;:&quot;https://myvideo-1255814175.cos.ap-chengdu.myqcloud.com/%E8%BF%B7%E5%AE%AB.mp4&quot;},&quot;danmaku&quot;:{&quot;api&quot;:&quot;">
 
 
 
@@ -206,7 +207,7 @@
 
 
 
-</head>
+<link rel="stylesheet" type="text/css" href="/assets/css/DPlayer.min.css"><script src="/assets/js/DPlayer.min.js"></script></head>
 
 
 
@@ -451,6 +452,28 @@
           </span>
 
           
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/编程/" itemprop="url" rel="index">
+                    <span itemprop="name">编程</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
 
           
             
@@ -493,7 +516,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  0
+                  751
                 </span>
               
 
@@ -509,7 +532,7 @@
                   <span class="post-meta-item-text">阅读时长 &asymp;</span>
                 
                 <span title="阅读时长">
-                  1
+                  5
                 </span>
               
             </div>
@@ -530,7 +553,265 @@
       
 
       
-        
+        <div id="dplayer3" class="dplayer hexo-tag-dplayer-mark" style="margin-bottom: 20px;"></div><script>(function(){var player = new DPlayer({"container":document.getElementById("dplayer3"),"video":{"url":"https://myvideo-1255814175.cos.ap-chengdu.myqcloud.com/%E8%BF%B7%E5%AE%AB.mp4"},"danmaku":{"api":"https://api.prprpr.me/dplayer/"}});window.dplayers||(window.dplayers=[]);window.dplayers.push(player);})()</script>
+<a id="more"></a>
+<p>上面的就是效果</p>
+<p><hr><br>源代码:</p>
+<pre><code>#include &quot;stdafx.h&quot;
+#include &quot;Maze.h&quot;
+
+bool visited[N][M];
+bool mask[N][M];
+bool area[N][M];
+int di[4][2] = { { 0, 1 }, { 1, 0 }, { 0, -1 }, { -1, 0 } };
+int main()
+{
+    Maze maze[N][M];
+    Block in, out;
+    initMaze(maze, in, out);
+    findPath(maze, in, out);
+    return 0;
+}
+void initMaze(Maze maze[N][M], Block &amp;in, Block &amp;out)
+{
+    initHeart();
+    srand((unsigned)time(NULL));
+
+    for (int i = 0; i &lt; N; i++)
+    {
+        for (int j = 0; j &lt; M; j++)
+        {
+            if (area[i][j] &amp;&amp; !(area[i][j - 1] &amp;&amp; area[i][j + 1] &amp;&amp; area[i - 1][j] &amp;&amp; area[i + 1][j]))
+                maze[i][j] = OUTWALL;
+            else if (area[i][j] &amp;&amp; i % 2 == 0 &amp;&amp; j % 2 == 0)
+                maze[i][j] = ROAD;
+            else if (area[i][j])
+                maze[i][j] = INWALL;
+            else
+                maze[i][j] = EMPTYWALL;
+            visited[i][j] = false;
+            mask[i][j] = true;
+        }
+    }
+    in.x = 1;
+    in.y = 6;
+    out.x = 27;
+    out.y = 36;
+    maze[in.x][in.y] = maze[out.x][out.y] = ROAD;
+    SqQueue S;
+    Block start;
+    initQueue(S);
+    start.x = 2;
+    start.y = 6;
+    enQueue(S, start);
+    visited[start.x][start.y] = true;
+    clearMask(start.x, start.y);
+    while (!isEmpty(S))
+    {
+        Block curBlock;
+        deQueue(S, curBlock);
+        for (int i = 0; i &lt; 4; i++)
+        {
+            int nextBlockX = curBlock.x + di[i][0] * 2;
+            int nextBlockY = curBlock.y + di[i][1] * 2;
+            if (inMaze(nextBlockX, nextBlockY) &amp;&amp; maze[nextBlockX][nextBlockY] == ROAD &amp;&amp; !visited[nextBlockX][nextBlockY])
+            {
+                Block nextBlock;
+                nextBlock.x = nextBlockX;
+                nextBlock.y = nextBlockY;
+                enQueue(S, nextBlock);
+                maze[curBlock.x + di[i][0]][curBlock.y + di[i][1]] = ROAD;
+                visited[nextBlockX][nextBlockY] = true;
+                clearMask(nextBlockX, nextBlockY);
+                updateMaze(maze);
+            }
+        }
+    }
+    for (int i = 0; i &lt; N; i++)
+    {
+        for (int j = 0; j &lt; M; j++)
+        {
+            if (maze[i][j] == OUTWALL)
+            {
+                mask[i][j] = false;
+                updateMaze(maze);
+            }
+        }
+    }
+}
+void findPath(Maze maze[N][M], Block in, Block out)
+{
+    Block block;
+    SqStack S;
+    initStack(S);
+    int curBlockX = in.x;
+    int curBlockY = in.y;
+    int step = 1;
+    do {
+        if (inMaze(curBlockX, curBlockY) &amp;&amp; maze[curBlockX][curBlockY] == ROAD)
+        {
+            initBlock(block, curBlockX, curBlockY, EAST);
+            push(S, block);
+
+            maze[curBlockX][curBlockY] = block.di;
+            updateMaze(maze);
+
+            if (curBlockX == out.x&amp;&amp;curBlockY == out.y)
+            {
+                printf(&quot;\n寻路成功\n共%d步&quot;, step);
+                Sleep(5000);
+                system(&quot;cls&quot;);
+                return;
+            }
+            curBlockX = nextBlockX(block.x, block.di);
+            curBlockY = nextBlockY(block.y, block.di);
+            step++;
+        }
+        else
+        {
+            pop(S, block);
+
+            if (block.di &lt; NORTH)
+            {
+                block.di++;
+                maze[block.x][block.y] = block.di;
+                push(S, block);
+                curBlockX = nextBlockX(block.x, block.di);
+                curBlockY = nextBlockY(block.y, block.di);
+                updateMaze(maze);
+            }
+            else
+            {
+                maze[block.x][block.y] = BACK;
+                updateMaze(maze);
+                step--;
+            }
+        }
+    } while (!isEmpty(S));
+    printf(&quot;寻路失败&quot;);
+}
+void initBlock(Block &amp;block, int x, int y, int di)
+{
+    block.x = x;
+    block.y = y;
+    block.di = di;
+}
+
+void showBlock(Maze maze[N][M])
+{
+    for (int i = 0; i &lt; N; i++)
+    {
+        for (int j = 0; j &lt; M; j++)
+        {
+            if (mask[i][j] == true)
+                printf(&quot;  &quot;);
+            else if (maze[i][j] == INWALL)
+                printf(&quot;█&quot;);
+            else if (maze[i][j] == OUTWALL)
+                printf(&quot;█&quot;);
+            else if (maze[i][j] == EMPTYWALL)
+                printf(&quot;  &quot;);
+            else if (maze[i][j] == ROAD)
+                printf(&quot;  &quot;);
+            else if (maze[i][j] == BACK)
+                printf(&quot;□&quot;);
+            else if (maze[i][j] == EAST)
+                printf(&quot;→&quot;);
+            else if (maze[i][j] == SOUTH)
+                printf(&quot;↓&quot;);
+            else if (maze[i][j] == WEST)
+                printf(&quot;←&quot;);
+            else if (maze[i][j] == NORTH)
+                printf(&quot;↑&quot;);
+            if (j != 0 &amp;&amp; j % (M - 1) == 0)
+                printf(&quot;\n&quot;);
+        }
+    }
+}
+void updateMaze(Maze maze[N][M])
+{
+    hideCursor();
+    gotoxy(0, 0);
+    showBlock(maze);
+    Sleep(DELAY);
+}
+
+int nextBlockX(int a, int di)
+{
+    int x = a;
+    switch (di)
+    {
+    case SOUTH:
+        x++;
+        break;
+    case NORTH:
+        x--;
+        break;
+    default:
+        break;
+    }
+    return x;
+}
+int nextBlockY(int b, int di)
+{
+    int y = b;
+    switch (di)
+    {
+    case EAST:
+        y++;
+        break;
+
+    case WEST:
+        y--;
+        break;
+    default:
+        break;
+    }
+    return y;
+}
+bool inMaze(int x, int y)
+{
+    return x &gt;= 0 &amp;&amp; x &lt; N&amp;&amp;y &gt;= 0 &amp;&amp; y &lt; M;
+}
+void clearMask(int x, int y)
+{
+    for (int i = x - 1; i &lt;= x + 1; i++)
+    for (int j = y - 1; j &lt;= y + 1; j++)
+    if (inMaze(i, j))
+        mask[i][j] = false;
+}
+void gotoxy(int x, int y)
+{
+    HANDLE handle = GetStdHandle(STD_OUTPUT_HANDLE);
+    COORD pos;
+    pos.X = x;
+    pos.Y = y;
+    SetConsoleCursorPosition(handle, pos);
+}
+void hideCursor()
+{
+    CONSOLE_CURSOR_INFO cursor_info = { 1, 0 };
+    SetConsoleCursorInfo(GetStdHandle(STD_OUTPUT_HANDLE), &amp;cursor_info);
+}
+void initHeart()
+{
+    int i = 0, j = 0;
+    for (float y = 1.2f; y &gt; -1.0f; y -= 0.06f)
+    {
+        for (float x = -1.1f; x &lt; 1.2f; x += 0.05f)
+        {
+            float a = x * x + y * y - 1;
+            if (a * a * a - x * x * y * y * y &lt;= 0.0f)
+                area[i][j] = true;
+            else
+                area[i][j] = false;
+            j++;
+        }
+        i++;
+        j = 0;
+    }
+}
+</code></pre>
       
     </div>
     
@@ -598,6 +879,12 @@
     
 
     <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/C/" rel="tag"><i class="fa fa-tag"></i> C++</a>
+          
+        </div>
       
 
       
@@ -751,7 +1038,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -762,7 +1049,7 @@ var jiathis_config={
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">11</span>
+                  <span class="site-state-item-count">16</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -822,7 +1109,7 @@ var jiathis_config={
               <ul class="links-of-blogroll-list">
                 
                   <li class="links-of-blogroll-item">
-                    <a href="http://www.dypcgs.cn:8080/myResume/secret.html" title="表白你呀" target="_blank">表白你呀</a>
+                    <a href="http://www.dypcgs.cn:8080/myResume/secret.html" title="一个用来表白的网页程序" target="_blank">一个用来表白的网页程序</a>
                   </li>
                 
               </ul>
@@ -896,7 +1183,7 @@ show_date_time();
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">4.1k</span>
+    <span title="Site words total count">8.7k</span>
   
   -->
  </div>
@@ -909,7 +1196,7 @@ show_date_time();
  
   <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共4.1k字</span>
+  <span class="post-count">博客全站共8.7k字</span>
   </div>
 
 

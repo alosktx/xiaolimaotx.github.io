@@ -186,7 +186,7 @@ th {
 body {
   position: relative;
   font-family: 'Monda', -apple-system, BlinkMacSystemFont, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "STHeiti", "Source Han Sans SC", "Noto Sans CJK SC", "WenQuanYi Micro Hei", "Droid Sans Fallback", "Microsoft YaHei", sans-serif;
-  font-size: 17px;
+  font-size: 16px;
   line-height: 2;
   color: #555;
   background: #fff;
@@ -203,7 +203,7 @@ body {
 }
 @media (min-width: 1600px) {
   body {
-    font-size: 19px;
+    font-size: 18px;
   }
 }
 h1,
@@ -1303,7 +1303,7 @@ pre .javascript .function {
 .post-body .figure .caption {
   margin: -20px auto 15px;
   text-align: center;
-  font-size: 17px;
+  font-size: 16px;
   color: #999;
   font-weight: bold;
   line-height: 1;
@@ -2209,7 +2209,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #faddc3;
+  background: #09ffff;
 }
 .links-of-blogroll {
   font-size: 13px;
