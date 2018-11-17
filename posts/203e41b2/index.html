@@ -134,7 +134,7 @@
 <meta property="og:description" content="就是一个用来熟悉html的小项目，非常简单。先贴上代码，如图所示，保存为 .html文件，用浏览器打开即可运行。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://myphoto-1255814175.cos.ap-chengdu.myqcloud.com/%E8%AE%A1%E7%AE%97%E5%99%A8.jpg">
-<meta property="og:updated_time" content="2018-11-17T08:30:35.127Z">
+<meta property="og:updated_time" content="2018-11-17T09:21:53.601Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="暑假实训项目之计算器">
 <meta name="twitter:description" content="就是一个用来熟悉html的小项目，非常简单。先贴上代码，如图所示，保存为 .html文件，用浏览器打开即可运行。">
@@ -172,7 +172,7 @@
     root: '/',
     scheme: 'Muse',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":true},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -495,7 +495,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  12
+                  225
                 </span>
               
 
@@ -532,13 +532,84 @@
       
 
       
-        <p>就是一个用来熟悉html的小项目，非常简单。<br>先贴上代码，如图所示，保存为 .html文件，用浏览器打开即可运行。<br><a id="more"></a></p>
-<p><hr><br>    <html><br>    <head><br>     <meta http-equiv="Content-type" content="text/html;charset=utf-8"><br>     <title>简单计算器</title><br>     <script language="javascript"><br>      function  fun_test(op){<br>          var fnum=parseInt(document.Mycount.firstNumber.value);<br>          var snum=parseInt(document.Mycount.secondNumber.value);<br>          var rs=0;<br>          if(op==’+’){<br>              rs=fnum+snum;<br>          }<br>          if(op==’-‘){<br>              rs=fnum-snum;<br>          }<br>          if(op==’<em>‘){<br>              rs=fnum</em>snum;<br>          }<br>          if(op==’/‘){<br>              rs=fnum/snum;<br>          }<br>          document.Mycount.result.value=rs;<br>      }<br>     </script><br>    </head><br>      <body><br>      <form name="Mycount"><br>      <table><br>      <tr><br>        <td>第一个数：</td><br>        <td><input type="text" name="firstNumber"></td><br>      </tr><tr><br>      </tr><tr><br>        <td>第二个数：</td><br>        <td><input type="text" name="secondNumber"></td><br>      </tr><tr><br>       </tr><tr><br>        <td>计算结果：</td><br>        <td><input type="text" name="result" readonly="true"></td><br>       </tr><tr><br>       </tr><tr><br>        <td colspan="3"><br>            <input type="button" name="but1" value="+" onclick="fun_test('+')"> &nbsp;&nbsp;&nbsp;&nbsp;<br>         <input type="button" name="but2" value="-" onclick="fun_test('-')"> &nbsp;&nbsp;&nbsp;&nbsp;<br>         <input type="button" name="but3" value="*" onclick="fun_test('*')"> &nbsp;&nbsp;&nbsp;&nbsp;<br>         <input type="button" name="but4" value="/" onclick="fun_test('/')"><br>        </td><br>       </tr><tr><br>      </tr></table><br>      </form><br>      <script src="/live2dw/lib/L2Dwidget.min.js?0c58a1486de42ac6cc1c59c7d98ae887"></script><script>L2Dwidget.init({"model":{"scale":1,"hHeadPos":0.5,"vHeadPos":0.618},"display":{"superSample":2,"width":150,"height":300,"position":"left","hOffset":0,"vOffset":-20},"mobile":{"show":false,"scale":0.2},"react":{"opacityDefault":0.7,"opacityOnHover":0.2},"log":false,"pluginJsPath":"lib/","pluginModelPath":"assets/","pluginRootPath":"live2dw/","tagMode":false});</script></body><br>    </html></p>
-<p><hr><br>效果如下图所示</p>
+        <p>&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x7528;&#x6765;&#x719F;&#x6089;html&#x7684;&#x5C0F;&#x9879;&#x76EE;&#xFF0C;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x3002;<br>&#x5148;&#x8D34;&#x4E0A;&#x4EE3;&#x7801;&#xFF0C;&#x5982;&#x56FE;&#x6240;&#x793A;&#xFF0C;&#x4FDD;&#x5B58;&#x4E3A; .html&#x6587;&#x4EF6;&#xFF0C;&#x7528;&#x6D4F;&#x89C8;&#x5668;&#x6253;&#x5F00;&#x5373;&#x53EF;&#x8FD0;&#x884C;&#x3002;<br><a id="more"></a></p>
+<hr>
+
+<pre><code>&lt;html&gt;
+&lt;head&gt;
+ &lt;meta http-equiv =&quot;Content-type&quot; content=&quot;text/html;charset=utf-8&quot;/&gt;
+ &lt;title&gt;&#x7B80;&#x5355;&#x8BA1;&#x7B97;&#x5668;&lt;/title&gt;
+ &lt;script language=&quot;javascript&quot;&gt;
+  function  fun_test(op){
+      var fnum=parseInt(document.Mycount.firstNumber.value);
+      var snum=parseInt(document.Mycount.secondNumber.value);
+      var rs=0;
+      if(op==&apos;+&apos;){
+          rs=fnum+snum;
+      }
+      if(op==&apos;-&apos;){
+          rs=fnum-snum;
+      }
+      if(op==&apos;*&apos;){
+          rs=fnum*snum;
+      }
+      if(op==&apos;/&apos;){
+          rs=fnum/snum;
+      }
+      document.Mycount.result.value=rs;
+  }  
+ &lt;/script&gt;
+&lt;/head&gt;
+  &lt;body&gt;
+  &lt;form name=&quot;Mycount&quot;&gt;
+  &lt;table&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&#x7B2C;&#x4E00;&#x4E2A;&#x6570;&#xFF1A;&lt;/td&gt;
+    &lt;td&gt;&lt;input type=&quot;text&quot; name=&quot;firstNumber&quot;&gt;&lt;/td&gt;
+  &lt;tr&gt;
+  &lt;tr&gt;
+    &lt;td&gt;&#x7B2C;&#x4E8C;&#x4E2A;&#x6570;&#xFF1A;&lt;/td&gt;
+    &lt;td&gt;&lt;input type=&quot;text&quot; name=&quot;secondNumber&quot;&gt;&lt;/td&gt;
+  &lt;tr&gt;
+   &lt;tr&gt;
+    &lt;td&gt;&#x8BA1;&#x7B97;&#x7ED3;&#x679C;&#xFF1A;&lt;/td&gt;
+    &lt;td&gt;&lt;input type=&quot;text&quot; name=&quot;result&quot; readonly=&quot;true&quot;&gt;&lt;/td&gt;
+   &lt;tr&gt;
+   &lt;tr&gt;
+    &lt;td colspan=&quot;3&quot;&gt;
+        &lt;input type=&quot;button&quot; name=&quot;but1&quot; value=&quot;+&quot; onClick=&quot;fun_test(&apos;+&apos;)&quot;&gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+     &lt;input type=&quot;button&quot; name=&quot;but2&quot; value=&quot;-&quot; onClick=&quot;fun_test(&apos;-&apos;)&quot;&gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+     &lt;input type=&quot;button&quot; name=&quot;but3&quot; value=&quot;*&quot; onClick=&quot;fun_test(&apos;*&apos;)&quot;&gt; &amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;
+     &lt;input type=&quot;button&quot; name=&quot;but4&quot; value=&quot;/&quot; onClick=&quot;fun_test(&apos;/&apos;)&quot;&gt;
+    &lt;/td&gt;   
+   &lt;tr/&gt;
+  &lt;/table&gt;
+  &lt;/form&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre><p></p><hr><br>&#x6548;&#x679C;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;<p></p>
 <center><img src="https://myphoto-1255814175.cos.ap-chengdu.myqcloud.com/%E8%AE%A1%E7%AE%97%E5%99%A8.jpg"></center>
 
 
-
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
       
     </div>
     
@@ -791,21 +862,21 @@ var jiathis_config={
             <div class="links-of-author motion-element">
                 
                   <span class="links-of-author-item">
-                    <a href="http://weibo.com/xiaolimaotx" target="_blank" title="Weibo">
+                    <a href="http://weibo.com/xiaolimaotx" target="_blank" title="微博">
                       
-                        <i class="fa fa-fw fa-微博"></i>Weibo</a>
+                        <i class="fa fa-fw fa-微博"></i>微博</a>
                   </span>
                 
                   <span class="links-of-author-item">
-                    <a href="http://zhihu.com/people/xiaolimaotx" target="_blank" title="Zhihu">
+                    <a href="http://zhihu.com/people/xiaolimaotx" target="_blank" title="知乎">
                       
-                        <i class="fa fa-fw fa-知乎"></i>Zhihu</a>
+                        <i class="fa fa-fw fa-知乎"></i>知乎</a>
                   </span>
                 
                   <span class="links-of-author-item">
-                    <a href="http://space.bilibili.com/292681286" target="_blank" title="Bilibili">
+                    <a href="http://space.bilibili.com/292681286" target="_blank" title="B站">
                       
-                        <i class="fa fa-fw fa-B站"></i>Bilibili</a>
+                        <i class="fa fa-fw fa-B站"></i>B站</a>
                   </span>
                 
                   <span class="links-of-author-item">
@@ -889,9 +960,9 @@ show_date_time();
 <script src="https://cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
-    <span class="with-love" id="animate">
+    <span class="with-love">
 	
-   <i class="fas fa-heartbeat"></i>
+   <i class="user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">T-shirt</span>
  
@@ -904,12 +975,10 @@ show_date_time();
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">8.7k</span>
+    <span title="Site words total count">9.0k</span>
   
   -->
  </div>
- 
- 
  <div>
  <span class="with-love" id="heart">
  <span>本站电脑访问体验更加哦！</span>
@@ -917,7 +986,7 @@ show_date_time();
  
   <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共8.7k字</span>
+  <span class="post-count">博客全站共9.0k字</span>
   </div>
 
 
@@ -972,6 +1041,8 @@ show_date_time();
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     

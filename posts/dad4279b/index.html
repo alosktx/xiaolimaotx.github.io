@@ -126,17 +126,17 @@
 
 
 
-<meta name="description" content="不定期更新中">
+<meta name="description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
 <meta property="og:type" content="article">
 <meta property="og:title" content="照片原图所携带的信息">
 <meta property="og:url" content="https://xiaolimaotx.github.io/posts/dad4279b/index.html">
 <meta property="og:site_name" content="Tang&#39;s Blog">
-<meta property="og:description" content="不定期更新中">
+<meta property="og:description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:updated_time" content="2018-11-15T11:27:43.513Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="照片原图所携带的信息">
-<meta name="twitter:description" content="不定期更新中">
+<meta name="twitter:description" content="document.querySelectorAll(&apos;.github-emoji&apos;)           .forEach(el =&amp;gt; {             if (!el.dataset.src) { return; }             const img = document.createElement(&apos;img&apos;);             img.style">
 
 
 
@@ -170,7 +170,7 @@
     root: '/',
     scheme: 'Muse',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":true},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -530,7 +530,25 @@
       
 
       
-        
+        <script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
       
     </div>
     
@@ -783,21 +801,21 @@ var jiathis_config={
             <div class="links-of-author motion-element">
                 
                   <span class="links-of-author-item">
-                    <a href="http://weibo.com/xiaolimaotx" target="_blank" title="Weibo">
+                    <a href="http://weibo.com/xiaolimaotx" target="_blank" title="微博">
                       
-                        <i class="fa fa-fw fa-微博"></i>Weibo</a>
+                        <i class="fa fa-fw fa-微博"></i>微博</a>
                   </span>
                 
                   <span class="links-of-author-item">
-                    <a href="http://zhihu.com/people/xiaolimaotx" target="_blank" title="Zhihu">
+                    <a href="http://zhihu.com/people/xiaolimaotx" target="_blank" title="知乎">
                       
-                        <i class="fa fa-fw fa-知乎"></i>Zhihu</a>
+                        <i class="fa fa-fw fa-知乎"></i>知乎</a>
                   </span>
                 
                   <span class="links-of-author-item">
-                    <a href="http://space.bilibili.com/292681286" target="_blank" title="Bilibili">
+                    <a href="http://space.bilibili.com/292681286" target="_blank" title="B站">
                       
-                        <i class="fa fa-fw fa-B站"></i>Bilibili</a>
+                        <i class="fa fa-fw fa-B站"></i>B站</a>
                   </span>
                 
                   <span class="links-of-author-item">
@@ -881,9 +899,9 @@ show_date_time();
 <script src="https://cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
-    <span class="with-love" id="animate">
+    <span class="with-love">
 	
-   <i class="fas fa-heartbeat"></i>
+   <i class="user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">T-shirt</span>
  
@@ -896,12 +914,10 @@ show_date_time();
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">8.7k</span>
+    <span title="Site words total count">9.0k</span>
   
   -->
  </div>
- 
- 
  <div>
  <span class="with-love" id="heart">
  <span>本站电脑访问体验更加哦！</span>
@@ -909,7 +925,7 @@ show_date_time();
  
   <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共8.7k字</span>
+  <span class="post-count">博客全站共9.0k字</span>
   </div>
 
 
@@ -964,6 +980,8 @@ show_date_time();
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     

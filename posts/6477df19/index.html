@@ -172,7 +172,7 @@
     root: '/',
     scheme: 'Muse',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":true},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -532,67 +532,67 @@
       
 
       
-        <p>用来模仿QQ农场的各种功能，当然不可能很完善啦，毕竟QQ农场是腾讯一个团队做出来的，这个只是效果上实现一下，实际上还有很多bug，下方的按钮可以播放音乐，先贴上源代码吧。<br>这是音乐图片的资源文件 <a href="https://pan.baidu.com/s/1vh9WEs7cyFfwT-iG5vngRA" target="_blank" rel="noopener">百度云资源：仿QQ农场项目</a></p>
+        <p>&#x7528;&#x6765;&#x6A21;&#x4EFF;QQ&#x519C;&#x573A;&#x7684;&#x5404;&#x79CD;&#x529F;&#x80FD;&#xFF0C;&#x5F53;&#x7136;&#x4E0D;&#x53EF;&#x80FD;&#x5F88;&#x5B8C;&#x5584;&#x5566;&#xFF0C;&#x6BD5;&#x7ADF;QQ&#x519C;&#x573A;&#x662F;&#x817E;&#x8BAF;&#x4E00;&#x4E2A;&#x56E2;&#x961F;&#x505A;&#x51FA;&#x6765;&#x7684;&#xFF0C;&#x8FD9;&#x4E2A;&#x53EA;&#x662F;&#x6548;&#x679C;&#x4E0A;&#x5B9E;&#x73B0;&#x4E00;&#x4E0B;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x8FD8;&#x6709;&#x5F88;&#x591A;bug&#xFF0C;&#x4E0B;&#x65B9;&#x7684;&#x6309;&#x94AE;&#x53EF;&#x4EE5;&#x64AD;&#x653E;&#x97F3;&#x4E50;&#xFF0C;&#x5148;&#x8D34;&#x4E0A;&#x6E90;&#x4EE3;&#x7801;&#x5427;&#x3002;<br>&#x8FD9;&#x662F;&#x97F3;&#x4E50;&#x56FE;&#x7247;&#x7684;&#x8D44;&#x6E90;&#x6587;&#x4EF6; <a href="https://pan.baidu.com/s/1vh9WEs7cyFfwT-iG5vngRA" target="_blank" rel="noopener">&#x767E;&#x5EA6;&#x4E91;&#x8D44;&#x6E90;&#xFF1A;&#x4EFF;QQ&#x519C;&#x573A;&#x9879;&#x76EE;</a></p>
 <a id="more"></a>
 <hr>
 
 <pre><code>&lt;html&gt;
 &lt;head&gt;
  &lt;meta http-equiv =&quot;Content-type&quot; content=&quot;text/html;charset=utf-8&quot;/&gt;
- &lt;title&gt;QQ农场&lt;/title&gt;
+ &lt;title&gt;QQ&#x519C;&#x573A;&lt;/title&gt;
  &lt;script language=&quot;javascript&quot;&gt;
-var stateflag=0;//状态变量 初始状态为0
-//改变状态
+var stateflag=0;//&#x72B6;&#x6001;&#x53D8;&#x91CF; &#x521D;&#x59CB;&#x72B6;&#x6001;&#x4E3A;0
+//&#x6539;&#x53D8;&#x72B6;&#x6001;
   function  fun_ChangeState(sflag){
-    if(sflag==&apos;播种&apos;){
+    if(sflag==&apos;&#x64AD;&#x79CD;&apos;){
         stateflag=1;
     }
-    if(sflag==&apos;采摘&apos;){
+    if(sflag==&apos;&#x91C7;&#x6458;&apos;){
         stateflag=2;
     }
-    if(sflag==&apos;翻地&apos;){
+    if(sflag==&apos;&#x7FFB;&#x5730;&apos;){
         stateflag=3;
     }
   }
   function  fun_login(){
       var userName=document.LoginForm.uname.value;
       var userPassword=document.LoginForm.upassword.value;
-     // alert(userName + &quot;您好，你的密码是&quot; + userPassword);
-     document.writeln(userName + &quot;您好，你的密码是&quot; + userPassword);
+     // alert(userName + &quot;&#x60A8;&#x597D;&#xFF0C;&#x4F60;&#x7684;&#x5BC6;&#x7801;&#x662F;&quot; + userPassword);
+     document.writeln(userName + &quot;&#x60A8;&#x597D;&#xFF0C;&#x4F60;&#x7684;&#x5BC6;&#x7801;&#x662F;&quot; + userPassword);
   }
-  //换图
+  //&#x6362;&#x56FE;
   function fun_ChangePic(picflag){
       if(stateflag==1){
-      //播种
+      //&#x64AD;&#x79CD;
     document.getElementById(picflag).src=&apos;https://qqnongchang-1255814175.cos.ap-chengdu.myqcloud.com/seed.jpg&apos;;
-    //3秒后自动发芽
+    //3&#x79D2;&#x540E;&#x81EA;&#x52A8;&#x53D1;&#x82BD;
     setTimeout(&quot;fun_Bud(&quot;+picflag+&quot;)&quot;,3000);
       }
       if(stateflag==2){
-      //采摘
+      //&#x91C7;&#x6458;
     document.getElementById(picflag).src=&apos;https://qqnongchang-1255814175.cos.ap-chengdu.myqcloud.com/harvest.png&apos;;
       }
       if(stateflag==3){
-      //翻地
+      //&#x7FFB;&#x5730;
     document.getElementById(picflag).src=&apos;https://qqnongchang-1255814175.cos.ap-chengdu.myqcloud.com/chanzi.jpg&apos;;
     setTimeout(&quot;fun_huifu(&quot;+picflag+&quot;)&quot;,1500);
       }
   }
-  //发芽
+  //&#x53D1;&#x82BD;
   function fun_Bud(budid){
     document.getElementById(budid).src=&apos;https://qqnongchang-1255814175.cos.ap-chengdu.myqcloud.com/bud.jpg&apos;;
-    //3秒后自动挂果
+    //3&#x79D2;&#x540E;&#x81EA;&#x52A8;&#x6302;&#x679C;
     setTimeout(&quot;fun_flower(&quot;+budid+&quot;)&quot;,3000);
   }
-   //挂果
+   //&#x6302;&#x679C;
   function fun_flower(fid){
     document.getElementById(fid).src=&apos;https://qqnongchang-1255814175.cos.ap-chengdu.myqcloud.com/flower.png&apos;;
   }
-  //恢复原样
+  //&#x6062;&#x590D;&#x539F;&#x6837;
   function fun_huifu(fuyuan){
     document.getElementById(fuyaun).src=&apos;https://qqnongchang-1255814175.cos.ap-chengdu.myqcloud.com/none.jpg&apos;;
   }
-  //换音乐
+  //&#x6362;&#x97F3;&#x4E50;
   function fun_ChangeMusic(){
       //document.getElementById(100).src=&apos;./image/9277.mp3&apos;;
       document.Mymusic.music1.src=&apos;https://qqnongchang-1255814175.cos.ap-chengdu.myqcloud.com/jiandanai.mp3&apos;;
@@ -600,9 +600,9 @@ var stateflag=0;//状态变量 初始状态为0
  &lt;/script&gt;
 &lt;/head&gt;
 &lt;body&gt;
-&lt;input type=&quot;button&quot; name=&quot;btn1&quot; value=&quot;播种&quot; onclick=&quot;fun_ChangeState(&apos;播种&apos;)&quot; &gt;
-&lt;input type=&quot;button&quot; name=&quot;btn2&quot; value=&quot;采摘&quot; onclick=&quot;fun_ChangeState(&apos;采摘&apos;)&quot; &gt;
-&lt;input type=&quot;button&quot; name=&quot;btn3&quot; value=&quot;翻地&quot; onclick=&quot;fun_ChangeState(&apos;翻地&apos;)&quot; &gt;
+&lt;input type=&quot;button&quot; name=&quot;btn1&quot; value=&quot;&#x64AD;&#x79CD;&quot; onclick=&quot;fun_ChangeState(&apos;&#x64AD;&#x79CD;&apos;)&quot; &gt;
+&lt;input type=&quot;button&quot; name=&quot;btn2&quot; value=&quot;&#x91C7;&#x6458;&quot; onclick=&quot;fun_ChangeState(&apos;&#x91C7;&#x6458;&apos;)&quot; &gt;
+&lt;input type=&quot;button&quot; name=&quot;btn3&quot; value=&quot;&#x7FFB;&#x5730;&quot; onclick=&quot;fun_ChangeState(&apos;&#x7FFB;&#x5730;&apos;)&quot; &gt;
 &lt;hr color=&quot;red&quot;&gt;
 &lt;table&gt;
 &lt;tr&gt;
@@ -635,15 +635,15 @@ var stateflag=0;//状态变量 初始状态为0
 &lt;div style=background-color:#0C0; width:200px;heigth:500px;&gt;
 &lt;table&gt;
 &lt;tr&gt;
-  &lt;td&gt;用户名:&lt;/td&gt;
+  &lt;td&gt;&#x7528;&#x6237;&#x540D;:&lt;/td&gt;
   &lt;td&gt;&lt;input type=&quot;text&quot; name=&quot;uname&quot;&gt;&lt;/td&gt; 
 &lt;/tr&gt;
 &lt;tr&gt;
-  &lt;td&gt;密码:&lt;/td&gt; 
+  &lt;td&gt;&#x5BC6;&#x7801;:&lt;/td&gt; 
   &lt;td&gt;&lt;input type=&quot;password&quot; name=&quot;upassword&quot;&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;tr&gt;
-  &lt;td&gt;&lt;input type=&quot;button&quot; name=&quot;login&quot; value=&quot;登 录&quot; onClick=&quot;fun_login()&quot;&gt;&lt;/td&gt;
+  &lt;td&gt;&lt;input type=&quot;button&quot; name=&quot;login&quot; value=&quot;&#x767B; &#x5F55;&quot; onClick=&quot;fun_login()&quot;&gt;&lt;/td&gt;
 &lt;/tr&gt;
 &lt;/table&gt;
 &lt;/div&gt;
@@ -652,13 +652,31 @@ var stateflag=0;//状态变量 初始状态为0
 &lt;form name=&quot;Mymusic&quot;&gt;
 &lt;embed src=https://qqnongchang-1255814175.cos.ap-chengdu.myqcloud.com/9277.mp3 id=&quot;100&quot; name=&quot;music1&quot;&gt;
 &lt;input type=&quot;button&quot; name=&quot;btn4&quot; value=&quot;9277&quot; onclick=&quot;fun_ChangeMusic()&quot; &gt;
-&lt;input type=&quot;button&quot; name=&quot;btn5&quot; value=&quot;简单爱&quot; onclick=&quot;fun_ChangeMusic()&quot; &gt;
+&lt;input type=&quot;button&quot; name=&quot;btn5&quot; value=&quot;&#x7B80;&#x5355;&#x7231;&quot; onclick=&quot;fun_ChangeMusic()&quot; &gt;
 &lt;/form&gt;
 &lt;/body&gt;
 &lt;/html&gt;
-</code></pre><p><hr><br>效果如下(翻地的时候出点小bug，貌似用错了图片？)</p>
+</code></pre><p></p><hr><br>&#x6548;&#x679C;&#x5982;&#x4E0B;(&#x7FFB;&#x5730;&#x7684;&#x65F6;&#x5019;&#x51FA;&#x70B9;&#x5C0F;bug&#xFF0C;&#x8C8C;&#x4F3C;&#x7528;&#x9519;&#x4E86;&#x56FE;&#x7247;&#xFF1F;)<p></p>
 <p><img src="https://myphoto-1255814175.cos.ap-chengdu.myqcloud.com/QQ%E5%86%9C%E5%9C%BA.gif" alt=""></p>
-
+<script>
+        document.querySelectorAll('.github-emoji')
+          .forEach(el => {
+            if (!el.dataset.src) { return; }
+            const img = document.createElement('img');
+            img.style = 'display:none !important;';
+            img.src = el.dataset.src;
+            img.addEventListener('error', () => {
+              img.remove();
+              el.style.color = 'inherit';
+              el.style.backgroundImage = 'none';
+              el.style.background = 'none';
+            });
+            img.addEventListener('load', () => {
+              img.remove();
+            });
+            document.body.appendChild(img);
+          });
+      </script>
       
     </div>
     
@@ -911,21 +929,21 @@ var jiathis_config={
             <div class="links-of-author motion-element">
                 
                   <span class="links-of-author-item">
-                    <a href="http://weibo.com/xiaolimaotx" target="_blank" title="Weibo">
+                    <a href="http://weibo.com/xiaolimaotx" target="_blank" title="微博">
                       
-                        <i class="fa fa-fw fa-微博"></i>Weibo</a>
+                        <i class="fa fa-fw fa-微博"></i>微博</a>
                   </span>
                 
                   <span class="links-of-author-item">
-                    <a href="http://zhihu.com/people/xiaolimaotx" target="_blank" title="Zhihu">
+                    <a href="http://zhihu.com/people/xiaolimaotx" target="_blank" title="知乎">
                       
-                        <i class="fa fa-fw fa-知乎"></i>Zhihu</a>
+                        <i class="fa fa-fw fa-知乎"></i>知乎</a>
                   </span>
                 
                   <span class="links-of-author-item">
-                    <a href="http://space.bilibili.com/292681286" target="_blank" title="Bilibili">
+                    <a href="http://space.bilibili.com/292681286" target="_blank" title="B站">
                       
-                        <i class="fa fa-fw fa-B站"></i>Bilibili</a>
+                        <i class="fa fa-fw fa-B站"></i>B站</a>
                   </span>
                 
                   <span class="links-of-author-item">
@@ -1009,9 +1027,9 @@ show_date_time();
 <script src="https://cdnjs.loli.net/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
-    <span class="with-love" id="animate">
+    <span class="with-love">
 	
-   <i class="fas fa-heartbeat"></i>
+   <i class="user"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">T-shirt</span>
  
@@ -1024,12 +1042,10 @@ show_date_time();
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">8.7k</span>
+    <span title="Site words total count">9.0k</span>
   
   -->
  </div>
- 
- 
  <div>
  <span class="with-love" id="heart">
  <span>本站电脑访问体验更加哦！</span>
@@ -1037,7 +1053,7 @@ show_date_time();
  
   <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共8.7k字</span>
+  <span class="post-count">博客全站共9.0k字</span>
   </div>
 
 
@@ -1092,6 +1108,8 @@ show_date_time();
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     
