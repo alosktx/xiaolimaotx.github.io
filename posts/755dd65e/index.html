@@ -136,7 +136,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://myphoto-1255814175.cos.ap-chengdu.myqcloud.com/15/qqliulanqi.jpg">
 <meta property="og:image" content="https://myphoto-1255814175.cos.ap-chengdu.myqcloud.com/15/down.gif">
-<meta property="og:updated_time" content="2018-11-22T12:51:57.990Z">
+<meta property="og:updated_time" content="2018-11-23T14:16:49.552Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="用Python下载视频">
 <meta name="twitter:description" content="就没有我下载不了的视频">
@@ -561,7 +561,8 @@
 
       
         <p><hr><a id="more"></a></p>
-<h2 id="概论"><a href="#概论" class="headerlink" title="概论"></a>概论</h2><blockquote>
+<p></p><h2>概论</h2><p></p>
+<blockquote>
 <p>介绍如何用python:<br>下载音悦台原画视频:✔<br>下载B站标清视频:待更新<br>批量下载抖音视频:待更新<br>下载腾讯非VIP视频:待更新</p>
 </blockquote>
 <p>一般而言，各大app或网站都有直接下载的按钮，但是它们往往会对视频的格式进行转化，使得下载的视频只能在站内播放，会对下载的视频的清晰度有限制，如果要下载原画视频往往要开通会员才行。这里提供几个先下载视频的方法。</p>
@@ -572,7 +573,7 @@
 <p><b>演示如下：</b></p>
 <p><hr><br><img src="https://myphoto-1255814175.cos.ap-chengdu.myqcloud.com/15/down.gif" alt=""></p>
 <p><hr><br>3.更高级一点的方法就是使用代码啦，不仅可以下载视频，还可以选择更高的清晰度进行下载！</p>
-<h2 id="用python下载音悦台原画视频"><a href="#用python下载音悦台原画视频" class="headerlink" title="用python下载音悦台原画视频"></a>用python下载音悦台原画视频</h2><p>我下载过的视频在这里<a href="/posts/457e3660/">门奈智代</a></p>
+<p></p><h2>用python下载音悦台原画视频</h2><br>我下载过的视频在这里 <a href="/posts/457e3660/">门奈智代</a><p></p>
 <p><b>演示如下：</b></p>
 <p><hr></p>
 <p><video poster="https://myphoto-1255814175.cos.ap-chengdu.myqcloud.com/15/down.png" src="https://myvideo-1255814175.cos.ap-chengdu.myqcloud.com/python.mp4" style="max-height :100%; max-width: 100%; display: block; margin-left: auto; margin-right: auto;" controls="controls" loop="loop" preload="meta">Your browser does not support the video tag.</video><br>代码如下：<br><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> re</span><br><span class="line"><span class="keyword">import</span> requests</span><br><span class="line"><span class="keyword">import</span> click</span><br><span class="line"><span class="keyword">from</span> contextlib <span class="keyword">import</span> closing</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">Spider</span><span class="params">(url)</span>:</span></span><br><span class="line">	mvid = url.split(<span class="string">'/'</span>)[<span class="number">-1</span>]</span><br><span class="line">	info_url = <span class="string">'http://www.yinyuetai.com/insite/get-video-info?flex=true&amp;videoId=&#123;&#125;'</span>.format(mvid)</span><br><span class="line">	res = requests.get(info_url)</span><br><span class="line">	html = res.text</span><br><span class="line">	rule = re.compile(<span class="string">r'http://\w*?\.yinyuetai\.com/uploads/videos/common/.*?(?=&amp;br)'</span>)</span><br><span class="line">	results = re.findall(rule, html)</span><br><span class="line">	num = len(results)</span><br><span class="line">	print(<span class="string">'[HELP]:This mv has %d levels,so enter 1-%d...'</span> % (num, num))</span><br><span class="line">	print(<span class="string">'[HELP]:The greater number, the better mv...'</span>)</span><br><span class="line">	choice = input(<span class="string">'Choose the mv quality:'</span>)</span><br><span class="line">	<span class="keyword">try</span>:</span><br><span class="line">		choice = int(choice)</span><br><span class="line">	<span class="keyword">except</span>:</span><br><span class="line">		print(<span class="string">'[Warning]:Enter error,auto choose the worst mv...'</span>)</span><br><span class="line">		choice = <span class="number">1</span></span><br><span class="line">	<span class="keyword">try</span>:</span><br><span class="line">		mv_url = results[choice<span class="number">-1</span>]</span><br><span class="line">	<span class="keyword">except</span>:</span><br><span class="line">		<span class="keyword">if</span> choice &lt; <span class="number">1</span>:</span><br><span class="line">			mv_url = results[<span class="number">0</span>]</span><br><span class="line">		<span class="keyword">else</span>:</span><br><span class="line">			mv_url = results[<span class="number">-1</span>]</span><br><span class="line">	print(<span class="string">'&lt;Download link&gt;: \n%s'</span> % mv_url)</span><br><span class="line">	<span class="keyword">with</span> closing(requests.get(mv_url, stream=<span class="keyword">True</span>)) <span class="keyword">as</span> res:</span><br><span class="line">		total_size = int(res.headers[<span class="string">'content-length'</span>])</span><br><span class="line">		<span class="keyword">if</span> res.status_code == <span class="number">200</span>:</span><br><span class="line">			label = <span class="string">'[FileSize]:%0.2f MB'</span> % (total_size/(<span class="number">1024</span>*<span class="number">1024</span>))</span><br><span class="line">			<span class="keyword">with</span> click.progressbar(length=total_size, label=label) <span class="keyword">as</span> progressbar:</span><br><span class="line">				<span class="keyword">with</span> open(mvid+<span class="string">'.mp4'</span>, <span class="string">"wb"</span>) <span class="keyword">as</span> f:  </span><br><span class="line">					<span class="keyword">for</span> chunk <span class="keyword">in</span> res.iter_content(chunk_size=<span class="number">1024</span>):</span><br><span class="line">						<span class="keyword">if</span> chunk:</span><br><span class="line">							f.write(chunk)</span><br><span class="line">							progressbar.update(<span class="number">1024</span>)</span><br><span class="line">		<span class="keyword">else</span>:</span><br><span class="line">			print(<span class="string">'[ERROR]:Connect error...'</span>)</span><br><span class="line"></span><br><span class="line"><span class="keyword">if</span> __name__ == <span class="string">'__main__'</span>:</span><br><span class="line">	print(<span class="string">'[INFO]:yinyuetai mv downloader...'</span>)</span><br><span class="line">	print(<span class="string">'[URL]:http://www.yinyuetai.com'</span>)</span><br><span class="line">	print(<span class="string">'[Author]:Charles'</span>)</span><br><span class="line">	url = input(<span class="string">'Enter the mv url you want to download:'</span>)</span><br><span class="line">	Spider(url)<span class="comment">#可以在此处直接将url替换成要要下载的视频链接</span></span><br></pre></td></tr></table></figure></p>
@@ -951,7 +952,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#概论"><span class="nav-text">概论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#用python下载音悦台原画视频"><span class="nav-text">用python下载音悦台原画视频</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">概论</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#undefined"><span class="nav-text">用python下载音悦台原画视频</span></a></li></ol></div>
             
 
           </div>
@@ -992,7 +993,7 @@ show_date_time();
     
       <span class="post-meta-item-text">Site words total count&#58;</span>
     
-    <span title="Site words total count">14.7k</span>
+    <span title="Site words total count">14.4k</span>
   
   -->
  </div>
@@ -1003,7 +1004,7 @@ show_date_time();
  
   <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共14.7k字</span>
+  <span class="post-count">博客全站共14.4k字</span>
   </div>
 
 
