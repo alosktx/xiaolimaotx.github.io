@@ -113,7 +113,7 @@
 
 
 
-  <meta name="keywords" content="视频,小技巧,python," />
+  <meta name="keywords" content="python,小技巧,视频," />
 
 
 
@@ -127,7 +127,7 @@
 
 
 <meta name="description" content="就没有我下载不了的视频">
-<meta name="keywords" content="视频,小技巧,python">
+<meta name="keywords" content="python,小技巧,视频">
 <meta property="og:type" content="article">
 <meta property="og:title" content="用Python下载视频">
 <meta property="og:url" content="https://xiaolimaotx.github.io/posts/755dd65e/index.html">
@@ -647,11 +647,11 @@
       
         <div class="post-tags">
           
-            <a href="/tags/视频/" rel="tag"><i class="fa fa-tag"></i> 视频</a>
+            <a href="/tags/python/" rel="tag"><i class="fa fa-tag"></i> python</a>
           
             <a href="/tags/小技巧/" rel="tag"><i class="fa fa-tag"></i> 小技巧</a>
           
-            <a href="/tags/python/" rel="tag"><i class="fa fa-tag"></i> python</a>
+            <a href="/tags/视频/" rel="tag"><i class="fa fa-tag"></i> 视频</a>
           
         </div>
       
@@ -743,13 +743,22 @@ var jiathis_config={
 
 
           
-
-  
-    <div class="comments" id="comments">
-    </div>
-  
-
-
+  <div class="comments" id="comments"></div>
+    
+    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/valine@1.1.6/dist/Valine.min.js"></script>
+    <script>
+        new Valine({
+            av: AV,
+            el: '.comments',
+            notify: true, // 邮件提醒 v1.1.4新增，下一步中有具体的邮箱设置
+            verify: true,
+            app_id: '',
+            app_key: '',
+            placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!'
+        });
+    </script>
+    
 
         </div>
         
@@ -1199,20 +1208,20 @@ show_date_time();
   
   <script type="text/javascript">
     var GUEST = ['nick','mail','link'];
-    var guest = 'nick,mail';
+    var guest = '';
     guest = guest.split(',').filter(item=>{
       return GUEST.indexOf(item)>-1;
     });
     new Valine({
         el: '#comments' ,
-        verify: false,
-        notify: false,
+        verify: ,
+        notify: ,
         appId: 'dGQNDJAXUi6cUoN95fWfTUuf-gzGzoHsz',
         appKey: 'z7AfTgOD56RLlU9DiU0dha7G',
-        placeholder: '欢迎留言，留下你的邮箱，有回复就会提醒你（邮箱不会公开）',
-        avatar:'identicon',
+        placeholder: '',
+        avatar:'',
         guest_info:guest,
-        pageSize:'10' || 10,
+        pageSize:'' || 10,
     });
   </script>
 
