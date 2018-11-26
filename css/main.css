@@ -2209,7 +2209,7 @@ img:hover {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff4b6f;
+  background: #9ac2d2;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3602,8 +3602,8 @@ h6 {
 }
 .weixin-box {
   position: absolute;
-  bottom: 43px;
-  left: 10px;
+  bottom: 90px;
+  left: 100px;
   border-radius: 5px;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.35);
 }
@@ -3612,7 +3612,7 @@ h6 {
   height: 24px;
   width: 24px;
   cursor: pointer;
-  background: url("https://yixiuer.oss-cn-shanghai.aliyuncs.com/images/wechat.svg");
+  background: url("https://myphoto-1255814175.cos.ap-chengdu.myqcloud.com/blog/wechat.svg");
   background-size: 24px 24px;
 }
 .weixin-hover {
