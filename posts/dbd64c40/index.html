@@ -113,7 +113,7 @@
 
 
 
-  <meta name="keywords" content="小技巧,视频,C++,项目," />
+  <meta name="keywords" content="C++,项目,视频,小技巧," />
 
 
 
@@ -127,7 +127,7 @@
 
 
 <meta name="description" content="又吃老本啦。。。">
-<meta name="keywords" content="小技巧,视频,C++,项目">
+<meta name="keywords" content="C++,项目,视频,小技巧">
 <meta property="og:type" content="article">
 <meta property="og:title" content="俄罗斯方块">
 <meta property="og:url" content="https://xiaolimaotx.github.io/posts/dbd64c40/index.html">
@@ -632,13 +632,13 @@
       
         <div class="post-tags">
           
-            <a href="/tags/小技巧/" rel="tag"><i class="fa fa-tag"></i> 小技巧</a>
-          
-            <a href="/tags/视频/" rel="tag"><i class="fa fa-tag"></i> 视频</a>
-          
             <a href="/tags/C/" rel="tag"><i class="fa fa-tag"></i> C++</a>
           
             <a href="/tags/项目/" rel="tag"><i class="fa fa-tag"></i> 项目</a>
+          
+            <a href="/tags/视频/" rel="tag"><i class="fa fa-tag"></i> 视频</a>
+          
+            <a href="/tags/小技巧/" rel="tag"><i class="fa fa-tag"></i> 小技巧</a>
           
         </div>
       
@@ -730,23 +730,14 @@ var jiathis_config={
 
 
           
-  <div class="comments" id="comments"></div>
-    
-    <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/valine@1.1.6/dist/Valine.min.js"></script>
-    <script>
-        new Valine({
-            av: AV,
-            el: '.comments',
-            notify: true, // 邮件提醒 v1.1.4新增，下一步中有具体的邮箱设置
-            verify: true,
-            app_id: '',
-            app_key: '',
-            placeholder: 'ヾﾉ≧∀≦)o来啊，快活啊!'
-        });
-    </script>
-    
 
+  
+    <div class="comments" id="comments">
+    </div>
+  
+
+
+s
         </div>
         
           
@@ -1170,20 +1161,20 @@ show_date_time();
   
   <script type="text/javascript">
     var GUEST = ['nick','mail','link'];
-    var guest = '';
+    var guest = 'nick,mail';
     guest = guest.split(',').filter(item=>{
       return GUEST.indexOf(item)>-1;
     });
     new Valine({
         el: '#comments' ,
-        verify: ,
-        notify: ,
+        verify: false,
+        notify: true,
         appId: 'dGQNDJAXUi6cUoN95fWfTUuf-gzGzoHsz',
         appKey: 'z7AfTgOD56RLlU9DiU0dha7G',
-        placeholder: '',
-        avatar:'',
+        placeholder: '欢迎留言，留下你的邮箱，有回复就会提醒你（邮箱不会公开）',
+        avatar:'identicon',
         guest_info:guest,
-        pageSize:'' || 10,
+        pageSize:'10' || 10,
     });
   </script>
 
