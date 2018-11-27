@@ -1181,12 +1181,12 @@ show_date_time();
     });
     new Valine({
         el: '#comments' ,
-        verify: false,
-        notify: false,
+        verify: true,
+        notify: true,
         appId: 'ktm6cpa5fiavtv0NQSFShzAl-gzGzoHsz',
         appKey: 'StPBPXgxeQhRRbSyKUXwPNQg',
-        placeholder: 'ヾﾉ≧∀≦)o 来呀！快活呀！~',
-        avatar:'mm',
+        placeholder: '欢迎评论，留下邮箱，有回复时将以邮件形式提醒你，邮箱不会被公开。',
+        avatar:'monsterid',
         guest_info:guest,
         pageSize:'10' || 10,
     });
