@@ -4,18 +4,18 @@ NexT.utils = NexT.$u = {
   /**
    * Wrap images with fancybox support.
    */
-  wrapImageWithFancyBox: function () {
+  wrapImageWithFancyBox: function() {
     $('.content img')
       .not('[hidden]')
       .not('.group-picture img, .post-gallery img')
-      .each(function () {
+      .each(function() {
         var $image = $(this);
         var imageTitle = $image.attr('title');
         var $imageWrapLink = $image.parent('a');
 
-        if ($imageWrapLink.size() < 1) {
-	        var imageLink = ($image.attr('data-original')) ? this.getAttribute('data-original') : this.getAttribute('src');
-          $imageWrapLink = $image.wrap('<a href="' + imageLink + '"></a>').parent('a');
+        if ($imageWrapLink.length < 1) {
+          var imageLink = $image.attr('data-original') ? this.getAttribute('data-original') : this.getAttribute('src');
+          $imageWrapLink = $image.wrap('<a data-fancybox="group" href="' + imageLink + '"></a>').parent('a');
         }
 
         $imageWrapLink.addClass('fancybox fancybox.image');
