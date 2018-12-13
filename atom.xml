@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://xiaolimaotx.github.io/"/>
-  <updated>2018-12-09T07:00:09.550Z</updated>
+  <updated>2018-12-13T10:59:38.399Z</updated>
   <id>https://xiaolimaotx.github.io/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>吾辈当自强</title>
+    <link href="https://xiaolimaotx.github.io/posts/12f7b846/"/>
+    <id>https://xiaolimaotx.github.io/posts/12f7b846/</id>
+    <published>2018-12-13T10:48:06.447Z</published>
+    <updated>2018-12-13T10:59:38.399Z</updated>
+    
+    <content type="html"><![CDATA[<p><img src="https://myphoto-1255814175.cos.ap-chengdu.myqcloud.com/tcIk3mo.jpg" alt=""></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;&lt;img src=&quot;https://myphoto-1255814175.cos.ap-chengdu.myqcloud.com/tcIk3mo.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+
+      
+    
+    </summary>
+    
+    
+  </entry>
   
   <entry>
     <title>T-shirt的日常</title>
@@ -156,9 +178,9 @@
     
       <category term="视频" scheme="https://xiaolimaotx.github.io/tags/%E8%A7%86%E9%A2%91/"/>
     
-      <category term="小技巧" scheme="https://xiaolimaotx.github.io/tags/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
-    
       <category term="python" scheme="https://xiaolimaotx.github.io/tags/python/"/>
+    
+      <category term="小技巧" scheme="https://xiaolimaotx.github.io/tags/%E5%B0%8F%E6%8A%80%E5%B7%A7/"/>
     
   </entry>
   
@@ -493,30 +515,6 @@
       <category term="白巧克力" scheme="https://xiaolimaotx.github.io/tags/%E7%99%BD%E5%B7%A7%E5%85%8B%E5%8A%9B/"/>
     
       <category term="马努·吉诺比利" scheme="https://xiaolimaotx.github.io/tags/%E9%A9%AC%E5%8A%AA%C2%B7%E5%90%89%E8%AF%BA%E6%AF%94%E5%88%A9/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>建站简史</title>
-    <link href="https://xiaolimaotx.github.io/posts/1f460c9d/"/>
-    <id>https://xiaolimaotx.github.io/posts/1f460c9d/</id>
-    <published>2018-01-04T12:59:06.660Z</published>
-    <updated>2018-03-12T16:00:00.000Z</updated>
-    
-    <content type="html"><![CDATA[<p><hr><a id="more"></a><div class="note success"><i>温馨提示：移动端点击页面右下角的三条杠按钮可以更方便地查看文章目录</i></div></p><h2 id="1-建站初衷"><a href="#1-建站初衷" class="headerlink" title="1.建站初衷"></a>1.建站初衷</h2><p>作为一只高傲的程序员，怎么能没有自己的网站，作为一只高傲的程序员，怎么能用说说和朋友圈来记录生活哈哈哈。。。实际上，自己做一个网站的想法萌生于大二上学期，当时期末无聊，总想着做点什么有意思的东西，对于我们这些<del>学计算机的</del>修电脑的人来说，还不是成天在电脑上捣鼓一些东西？写个App吧，我怕把我电脑弄卡死。。。做个游戏？我不会啊。。。。还是认真学点算法，不行，头晕。。。就不能弄个实际点的，自己能用得上的东西，比如游戏外挂什么的？倒还真玩了一个：<a href="https://pan.baidu.com/s/1ZVBa_9Ghc483Rsw-p2Rquw" target="_blank" rel="noopener">微信跳一跳</a>，想来想去，还是做个网站来的实在，做好后，可以不受软件的限制，有网络就能访问，到时候自己想换个背景名字啥的想换就换，想置顶什么文章就置顶什么文章，不用再去开什么会员（此处@微博），写字字数有限制发出去的内容不能更改无法发送多条视频？（此处@朋友圈）不存在的；看不到访客量读取数，无法及时联系？（此处@各大社交软件），不存在的。这样一对比，个人网站的好处就凸显出来了，除了上面所说的这些好处外，此网站还集成了各种功能，详见本文 <a href="#anchor">3.1功能列表</a> 这算是在记录生活方面的好处，此外个人网站还有更深层次的意义，网站如果做好了，即可作为一张个人名片，比如说：我将来去面试，面试官问我有什么项目经历，我可以直接把漂亮网站扔给他：自己看，我的网站，上面有我的各种学习和实习经历。 一听起来就很酷是不是，网站就很。。。高逼格？不是么，哈哈哈。还有一个意义就是传递三观，对生活中各种各样的人或事总是会有自己不同的看法，集中写到这个网站上来，推送与否取决于自己，即使长篇大论也不会像朋友圈一样惹人厌烦，有什么要记录的内容放上来随时可找，就很方便。</p><h2 id="2-建站过程"><a href="#2-建站过程" class="headerlink" title="2.建站过程"></a>2.建站过程</h2><h3 id="2-1网站上线"><a href="#2-1网站上线" class="headerlink" title="2.1网站上线"></a>2.1网站上线</h3><p>当然，使用个人网站记录东西也有缺点，就是比较麻烦，一开始不知从何下手。在知乎上搜索了各大建站教程，大部分都是需要服务器的，而且教程写的及其简单，对新手很不友好，后来我终于找到了这篇比较详尽的文章 <a href="https://zhuanlan.zhihu.com/p/26625249" target="_blank" rel="noopener">Github+hexo搭建个人网站详细教程</a>（<em>在此特别感谢文章原作者</em>)，说干就干，教程虽详细，但具体操作起来还是踩了很多坑，记得当时进行到 <code>推送网站</code> 这一步时，迟迟见不到效果，网站一直没上线，无法访问。忙到晚上八点，还是不成，直接给原作者发送很多知乎消息请求帮助，但对方不在线，自己钻研半天，决定从头再来，每一步都对比原作者的文章，不敢做丝毫更改(软件设计就是这样，改动了一个字或者一个标点符号都会失之毫厘谬以千里)，后来终于在晚上十点多的时候，博客上线了，输入网址<a href="https://xiaolimaotx.github.io">https://xiaolimaotx.github.io</a>就能访问，刚开始的界面大概是如下图所示，啥都没有，不过我依然激动得热泪盈眶，这种成就感和满足感或许只有自己真正去做了才能体会得到。在此提出做网站的第一个方法：<span style="border-bottom:2px dashed blue;">先一步一步照着做，公共内容可以原封不动地copy过来，不要试图做任何更改，防止后面得不到应有的效果</span></p><h3 id="2-2初次优化"><a href="#2-2初次优化" class="headerlink" title="2.2初次优化"></a>2.2初次优化</h3><p>网站上线后我貌似就很满足了，只进行了一些简单的设置，没做什么优化，于是我的网站就保持着上面那个丑样子过了一个寒假。大二下学期开学，我想起了这个年前做的网站，不如优化一下？同样是参照那篇建站的文章，后半段，换用了next主题，集成<a href="/tags/">标签</a>，<a href="/categories/">分类</a>功能，评论功能，还有<a href="/404/">404界面</a>(好吧，其实这只是个bug，页面弄丢了强行加的，若真能帮到某人找到失踪的儿童，也算是好事一件吧)，用临时的图云链接插入了几张图片。 差不多就行了呗，毕竟我当初并没有真正用网站写文章的想法，觉得这个这个功能实在有限(鼠目寸光，我错了)，不思进取，不求甚解。网站初次优化就是这样，其实算起来没干什么，就是换了个主题。</p><h2 id="3-深度优化-二次优化"><a href="#3-深度优化-二次优化" class="headerlink" title="3.深度优化(二次优化)"></a>3.深度优化(二次优化)</h2><p>转眼间过了大半年，我也是一名大三的老学长了，至于我的网站，放在那里几乎就没这么管过，期间一直希望能系统的学习一下Java后台，好用代码实现更炫酷的动态网站(目前这个网站算是静态的，还是有限制)，然而，三天打鱼两天晒网，后台学习课程比较难，还没过半。。。不过，我是不会放弃的，估计等我系统地学完Java后台，就该推送网站3.0了。 话说回来，在我一次翻看知乎的时候，无意中查看了很多大佬们的个人网站，发现他们同样是hexo主题网站，却集成了相当多的功能，印象最深的就是 <a href="https://liuchi.coding.me/favorite/" target="_blank" rel="noopener">集成豆瓣页面的这个</a>(微信端可能访问不了，有拦截)，我没想到这个网站还能集成这么多功能，那还等什么，做啊。经过了我几个星期的努力，我终于也使自己的网站集成了hexo网站几乎所有的功能，现在我回头看那些大佬们的网站，有一种：今日我从湖上过，画家还欠些功夫的感觉。 哈哈哈，飘了飘了。<br><span id="anchor"></span></p><h3 id="3-1功能列表"><a href="#3-1功能列表" class="headerlink" title="3.1功能列表"></a>3.1功能列表</h3><i>打 √ 即为已经集成的</i><pre><code>1.阿里云域名绑定:tangxiao.club: 取消(微信端屏蔽)2.在右上角或者左上角实现fork me on github:√3.定义网站个性logo:√4.添加站内搜索:√5.添加更多的menu内容(相册，读书，电影):√6.添加 TopX 页面:待添加7.自定义样式，重写默认样式，修改网页配色等:√8.背景图片:√6.炫酷动态背景制作:取消7.利用 gulp 压缩代码:待添加8.加速 Hexo 博客:待添加9.萌萌哒十二生肖:取消10.修改作者头像并旋转: √11.点击侧栏头像回到博客首页:√12.添加网易云音乐:√13.添加RSS:√14.侧边栏社交小图标设置:√15.侧栏加入已运行的时间:√16.侧边栏推荐阅读(神奇的链接):√17.为博客加上GitHub丝带:取消18.添加顶部加载条:√19.实现点击出现桃心效果:√ 20.点击爆炸效果:取消21.博文压缩:待添加22.主页文章添加阴影效果:√23.文章摘要图片:√24.文章置顶:√25.添加热度:取消26.添加leancloud阅读次数统计功能:√27.添加wordcount页面字数统计:√28.修改文章内链接文本样式:√29.文章底部加上评分小星星:√30.添加jiathis分享:√31.修改文章底部的标签样式:√32.在每篇文章末尾统一添加“本文结束”标记:√33.在文章底部增加版权信息:√34.更改上一篇，下一篇的顺序:√35.页脚加上微信二维码:取消36.让页脚的心跳动起来(改为文字跳动):√37.相关/热门/推荐文章:待添加38.MathJax 的静态显示svg:待添加39.使用 emoji:√40.插入音乐和视频(视频提供弹幕功能，音乐插件与相册功能相冲突取消):√41.打赏:√42.增加留言页（来必力--valine）:√43.设置动态title:√44.首页分割线:√45.修改``代码块自定义样式代码块高亮:√46.移动端显示 back-to-top 按钮和侧栏:√47.隐藏网页底部powered By Hexo / 强力驱动:√48.网站底部字数统计:√49.在网站底部加上访问量:√50.更改标签云（tagcloud）的颜色:√51.修改标题下分类等的样式:√52.自定义鼠标样式:取消53.为博客加上萌萌的宠物live2d:√55.DaoVoice 在线联系:√56.瀑布流相册:√57.豆瓣读书电影界面分享:√58.移动端顶部菜单:√59.七牛云图云:√60.腾讯云COS对象存储:√</code></pre><h3 id="3-2大坑一之live2d宠物功能"><a href="#3-2大坑一之live2d宠物功能" class="headerlink" title="3.2大坑一之live2d宠物功能"></a>3.2大坑一之live2d宠物功能</h3><p><img src="https://myphoto-1255814175.cos.ap-chengdu.myqcloud.com/live2D.png" alt=""><br>就是这个东西，萌萌哒，眼睛会随着你的鼠标转动，你点击她她还会说话，可以换不同的样式，虽说很花哨，没什么实际意义，但是就是有这个功能啊。为什么要研究黑洞？因为它就在这里。霍金这样说。为什么要装一个女孩子？因为就有这个功能，拿来测试一下嘛。后期可能会停用，现在呢先用来试一下。至于大坑嘛，就是找错了文档，在此总结做网站的第二个方法：<span style="border-bottom:2px dashed blue;">现在网络上文章一大抄，美其名曰：转载，参考，其实你抄我的，我抄你的，抄来抄去不知不觉就丢失了很多重要内容，所以要看就看那种官方文档，或者看就原作者的文章（如果那个转载的人有良知注明转载出处的话），这些比较全面详细，不会误导你</span>，live2D宠物功能的实现，推荐看这篇 <a href="https://github.com/EYHN/hexo-helper-live2d/blob/master/README.zh-CN.md" target="_blank" rel="noopener">hexo-helper-live2d</a>。</p><h3 id="3-3大坑二之豆瓣插件"><a href="#3-3大坑二之豆瓣插件" class="headerlink" title="3.3大坑二之豆瓣插件"></a>3.3大坑二之豆瓣插件</h3><p><img src="https://myphoto-1255814175.cos.ap-chengdu.myqcloud.com/1/danban2.png" alt=""><br>就是这个页面，其实就是爬取了自己的豆瓣页面，将其放在我自己的网站上。这里推荐看原作者的文章   <a href="https://github.com/mythsman/hexo-douban" target="_blank" rel="noopener">https://github.com/mythsman/hexo-douban</a>，需要注意的是，用户id不要前面的那一串<code>https://</code>,只保留自己的id即可。本来挺简单的一个功能，我却花了好长时间都没弄出来，最后去请教原作者，一针见血地指出我的问题，把前面的那一串<code>https://×××</code>去掉即可。</p><h3 id="3-4大坑三之相册功能"><a href="#3-4大坑三之相册功能" class="headerlink" title="3.4大坑三之相册功能"></a>3.4大坑三之相册功能</h3><p><img src="https://myphoto-1255814175.cos.ap-chengdu.myqcloud.com/1/%E6%88%91%E7%9A%84%E7%9B%B8%E5%86%8C.png" alt="">就是我这个相册功能，看上去挺简单，我给大家看看我的markdown页面<br><img src="https://myphoto-1255814175.cos.ap-chengdu.myqcloud.com/1/%E7%9B%B8%E5%86%8C.png" alt="">这里可是没有存一张照片哦，照片都放在云端，通过本地解析，呈现在网页上，自动排序(所谓的瀑布流？)，可向下翻页，可显示照片名称，也不简单吧。弄这个真的耗光了我的所有耐心，花了我两个星期的时间，光是在网上找方法，我就找了一大版，但各种不对口。我要找的是hexo+next主题+七牛云/腾讯云实现相册功能，网上大部分都不是next主题，是next主题的呢？用的有时github做云端(太慢了，一张照片要加载到何年何月去？)，最终我找到了这篇文章 <a href="https://blog.dongleizhang.com/posts/3720dafc/" target="_blank" rel="noopener">Hexo NexT 博客增加瀑布流相册页面</a>,非常非常非常感谢作者(作者是浙大毕业的优秀的小哥哥哦)，这可能是目前网上最简单的制作相册页面的教程了，我在这个博客下面问了很多问题，小哥哥都耐心地帮我解答，甚至我要到了他的博客的源码后还把我的博客文件打包发给他，让他帮我找错(我真的是脸皮太厚了哈哈哈)，其实我的博客背景也是偷的他的，毕竟要到了他的源码嘛哈哈哈。他的文章已经说的很清楚了，不过还是有一个小错误，详见那篇文章下面的评论，我写的。我拿到他的源码后和他做得一模一样，即使如此，我的相册功能还是无法实现，图片加载不出来。那段时间真的要被逼疯了，一度想阉割掉这个功能，但我岂是轻易放弃之人，后来我去查看了，<a href="https://asdfv1929.github.io/2018/05/26/next-add-photos/" target="_blank" rel="noopener">小哥哥所参考文章</a> 的原作者，并同样不要脸的把我的博客文件打包发给他，这个小哥哥人也很好，放弃了吃午饭的时间，帮我找出来问题所在，就是这个aplayer插件，本来装着准备用于歌单功能的，但是它与相册功能相冲突，无奈，留相册去歌单。在此提出做网站的第三个方法：<span style="border-bottom:2px dashed blue;">小哥哥是使用chorm浏览器的开发者模式功能，在chorm下按 Ctrl+Shift+I 键可审查网页元素，方便检查网页缺失的元素或多余的元素，可能需要审查者具有一定的相关知识才能看懂</span>，其实就是debug。</p><p><hr>自此，建站简史完成，后续有补充到时候再加进来。</p>]]></content>
-    
-    <summary type="html">
-    
-      本站必读文章!
-    
-    </summary>
-    
-      <category term="hexo" scheme="https://xiaolimaotx.github.io/categories/hexo/"/>
-    
-    
-      <category term="博客" scheme="https://xiaolimaotx.github.io/tags/%E5%8D%9A%E5%AE%A2/"/>
-    
-      <category term="hexo" scheme="https://xiaolimaotx.github.io/tags/hexo/"/>
     
   </entry>
   
