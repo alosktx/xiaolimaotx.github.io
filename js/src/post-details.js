@@ -86,6 +86,7 @@ $(document).ready(function () {
   });
 
   // Expand sidebar on post detail page by default, when post has a toc.
+  /*
   var $tocContent = $('.post-toc-content');
   var isSidebarCouldDisplay = CONFIG.sidebar.display === 'post' ||
       CONFIG.sidebar.display === 'always';
@@ -96,4 +97,6 @@ $(document).ready(function () {
           NexT.utils.displaySidebar();
       }) : NexT.utils.displaySidebar();
   }
+  */
+  NexT.utils.displaySidebar();
 });

@@ -71,8 +71,8 @@
         <category>编程</category>
       </categories>
       <tags>
-        <tag>小技巧</tag>
         <tag>视频</tag>
+        <tag>小技巧</tag>
         <tag>python</tag>
       </tags>
   </entry>
@@ -84,8 +84,8 @@
         <category>博客</category>
       </categories>
       <tags>
-        <tag>颜色</tag>
         <tag>hexo</tag>
+        <tag>颜色</tag>
       </tags>
   </entry>
   <entry>
@@ -98,8 +98,8 @@
       <tags>
         <tag>C++</tag>
         <tag>项目</tag>
-        <tag>小技巧</tag>
         <tag>视频</tag>
+        <tag>小技巧</tag>
       </tags>
   </entry>
   <entry>
@@ -249,8 +249,8 @@
         <category>hexo</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
         <tag>博客</tag>
+        <tag>hexo</tag>
       </tags>
   </entry>
 </search>
